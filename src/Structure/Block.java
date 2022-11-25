@@ -9,7 +9,7 @@ public class Block implements Structure
 	public boolean placed;
 	public boolean shot;
 	public Ship ship;
-	
+	 
 	public Block(int x, int y)
 	{
 		this.x = x;

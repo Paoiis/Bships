@@ -12,7 +12,7 @@ public class Gridline implements Structure
 		this.x = x;
 		this.y = y;
 	}
-	
+	 
 	public void create()
 	{
 		grid = new Block[this.x][this.y];
