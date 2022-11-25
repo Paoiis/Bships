@@ -23,7 +23,7 @@ public class Gridline implements Structure
 		}
 	}
 	
-	public boolean checkShot(int x, int y) //check if a shot can be done in enemies grid
+	public boolean checkShot(int x, int y) 
 	{
 		if(grid[x][y].shot == false)
 			return true;
@@ -36,7 +36,7 @@ public class Gridline implements Structure
 		if(n == 1)
 			return !grid[x][y].placed;
 		
-		if(dir.equals("r") && x+n < 10) //right
+		if(dir.equals("r") && x+n < 10) 
 		{
 			for(int i = 0; i < n; i++)
 			{
@@ -45,7 +45,7 @@ public class Gridline implements Structure
 			}
 			return true;
 		}
-		if(dir.equals("d") && y+n < 10) //down
+		if(dir.equals("d") && y+n < 10) 
 		{
 			for(int i = 0; i < n; i++)
 			{
@@ -63,7 +63,7 @@ public class Gridline implements Structure
 		return grid[x][y].show;
 	}
 	
-	public void place(Ship ship) //place a ship on the gridline in creation
+	public void place(Ship ship) 
 	{
 		int x = ship.x;
 		int y = ship.y;
@@ -103,7 +103,7 @@ public class Gridline implements Structure
 	}
 	
 	public void mark(int x, int y, boolean hit) 
-	//mark on the enemies grid the shot according to outcome
+	
 	{
 		grid[x][y].shot(hit);
 	}
